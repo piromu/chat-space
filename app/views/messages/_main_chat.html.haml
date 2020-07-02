@@ -1,0 +1,29 @@
+.Chat
+  .MainHeader
+    .MainHeader__group
+      .MainHeader__groupname
+        グループの名前が表示されます
+      %ul.MainHeader__memberlist
+        Member：
+        %li.MainHeader__member
+          ユーザー名
+    = link_to '#',class: "MainHeader__editbutton" do
+      Edit
+  .Messagespace
+    .Messagebox
+      .Messageinfo
+        .Messageinfo__username
+          ユーザー名
+        .Messageinfo__date
+          time
+      .Message
+        %p.Message__content
+          メッセージが表示されます
+  .Footer
+    %form.Form
+      .Form__contents
+        %input.Form__inputContent{type: 'text', placeholder: 'type a message'}
+        %label.Form__inputImage
+          = icon('far', 'image', class: 'Form__icon')
+          %input.Hidden{type: 'file'}
+      %input.Form__submit{type: 'submit', value: 'Send'}

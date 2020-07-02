@@ -1,0 +1,27 @@
+.SideBar
+  .SideHeader
+    .SideHeader__list
+      %h3.SideHeader__UserName
+        ユーザー名
+      %ul.SideHeader__IconList
+        %li.SideHeader__Icon
+          = link_to '#' do
+            = icon('fas', 'edit')
+        %li.SideHeader__Icon
+          = link_to '#' do
+            = icon('fas', 'cog')
+  .GroupList
+    .Group
+      = link_to '#' do
+        .Group__name
+          グループ名
+        .Group__message
+          新着メッセージ
+      %span
+    .Group
+      = link_to '#' do
+        .Group__name
+          グループ名
+        .Group__message
+          新着メッセージ
+      %span
