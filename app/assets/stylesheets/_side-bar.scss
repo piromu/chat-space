@@ -1,0 +1,57 @@
+.SideBar {
+  color: #fff;
+  width: 300px;
+}
+
+.SideHeader {
+  background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &__list{
+    height: 20px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__UserName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__IconList {
+    display: flex;
+    justify-content: end;
+  }
+  &__Icon {
+    margin-left: 5px;
+    a {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
+
+.GroupList {
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.Group {
+  box-sizing: border-box;
+  padding: 20px 0 40px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__name {
+    font-size: 15px;
+  }
+  &__message {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}
